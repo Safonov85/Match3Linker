@@ -29,6 +29,7 @@ public class Game : MonoBehaviour
     {
         //GetDiamondType(5, 3);
         PutDiomondsInPlace();
+        Debug.Log(clones[17].transform.position.x.ToString());
         //GetDiamondType(Random.Range(1, 5), 5, 1.5f, 0);
     }
 
@@ -89,4 +90,6 @@ public class Game : MonoBehaviour
             clones[index] = Instantiate(sapphire, new Vector2(x, y), Quaternion.Euler(0, 0, 0)) as GameObject;
         }
     }
+
+
 }
